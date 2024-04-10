@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Flexbox Hero Header</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+
+        <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+        <link rel="stylesheet prefetch" href="https://anacoelhovicente.github.io/tangerine/dist/tangerine-grid.min.css" />
+
+        <style>
+            /*
+Flexbox grid: https://github.com/anacoelhovicente/tangerine
+*/
+
+            html {
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            html,
+            body {
+                color: #444;
+                font: 400 14px/1.5 Montserrat, sans-serif;
+            }
+
+            a,
+            a:hover,
+            a:focus {
+                color: inherit;
+                outline: none;
+                text-decoration: none;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                margin: 0;
+            }
+
+            header {
+                color: #fff;
+                height: 100vh;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 3rem;
+                line-height: 1.2;
+                margin: 0;
+                padding: 0;
+                flex-grow: 1;
+                z-index: 1;
+            }
+
+            .down-arr {
+                font-size: 2rem;
+                padding: 0 20px 20px 20px;
+                z-index: 1;
+            }
+
+            section {
+                min-height: 100vh;
+                padding: 40px 100px;
+                text-align: center;
+                width: 100%;
+            }
+
+            section:nth-child(2) {
+                background: #ecf0f1;
+            }
+
+            .full-image-wrap {
+                min-height: 100%;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .full-image {
+                height: auto;
+                left: 0;
+                min-height: 100%;
+                min-width: 100%;
+                position: absolute;
+                top: 0;
+                width: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="content">
+            <header class="column-xs main-xs-between cross-xs-center full-image-wrap">
+                <h1 class="column-xs main-xs-center">Hero Header Text</h1>
+                <a href="#main" class="down-arr">&#8595;</a>
+                <img class="full-image" src="https://images.unsplash.com/photo-1458324124043-7803d4fec380?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=df280ed170d2a9e25506f2d3db42f4f9" alt="" />
+            </header> 
+        </div>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+        <script>
+            $(document.body).on("click", 'a[href*="#"]', function (e) {
+                e.preventDefault();
+                $("html,body").animate(
+                    {
+                        scrollTop: $(this.hash).offset().top,
+                    },
+                    900
+                );
+            });
+
+            $(window).on("scroll", function () {
+                var scrolled = $(window).scrollTop();
+                var height = $(window).height();
+                if (scrolled < height) {
+                    $(".full-image").css({
+                        top: -scrolled * 0.5,
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>
