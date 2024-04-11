@@ -17,4 +17,4 @@ print(header_path_number , body_path_number)
 header_path = f'./Header/ex{header_path_number}/index.html'
 body_path = f'./Body/ex{body_path_number}/index.html'
 
-merge_html_files('./Header/ex1/index.html', './Body/ex1/index.html', 'output.html')
+merge_html_files('./Header/exPivo/index.html', './Body/ex1/index.html', 'output.html')
