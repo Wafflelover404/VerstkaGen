@@ -1,2 +1,2 @@
-# VerstkAi
-An Ai supported by NDTP (http://ndtp.by/)
+# VerstkaGen
+An Ai based constructor supported by NDTP (http://ndtp.by/)
