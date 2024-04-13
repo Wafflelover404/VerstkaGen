@@ -1,5 +1,5 @@
 # VerstkaGen
- * An Ai based constructor supported by NDTP (http://ndtp.by/)
+ * An Ai based constructor developed with NDTP (http://ndtp.by/)
 
 ## Copyrights
 
