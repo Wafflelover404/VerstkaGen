@@ -1,0 +1,1 @@
+This folder is for deploying project on streamlit platform.
