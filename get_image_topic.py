@@ -1,7 +1,7 @@
 import requests
 import re
 
-hf_token = "" # replace with your HuggingFace API key
+hf_token = "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" # replace with your HuggingFace API key
 
 API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"
 headers = {"Authorization": f"Bearer {hf_token}"}

@@ -2,6 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 import os
 import subprocess
+from check_for_internet import check_internet
 
 # Streamlit (interface) code starts here
 st.set_page_config(page_title="VerstkAi", page_icon=":globe_with_meridians:", layout="wide")
@@ -20,6 +21,16 @@ if st.button('Generate'):
     # When pressed, the field content will be written to the variables
     st.write(f'Company Name: {company_name}')
     st.write(f'Company Description: {company_description}')
+
+    if check_internet() == False:
+        st.write("Internet Connection Error")
+
+        # Open error, cause input's empty
+        with open('no_internet.html', 'r') as f:
+            # Display the HTML file
+            components.html(f.read(), height=900)
+
+
 
     if (company_name and company_description):
 
