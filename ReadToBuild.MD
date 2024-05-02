@@ -5,4 +5,4 @@ APIs are mechanisms that enable two software components to communicate with each
 ## Get your HF token Right away ! - https://huggingface.co/settings/tokens.
 ## Get your Pixabay token Just Now ! - https://pixabay.com/api/docs/ (You need this key in green bold). 
 
-PS. These two APIs are required for project to work !!!
+# These two APIs are required for project to work !!!
