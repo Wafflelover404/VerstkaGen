@@ -21,7 +21,8 @@ header_path_number = random.randint(1, count_folders("Header"))
 body_path_number = random.randint(1, count_folders("Body"))
 print(str(count_folders("Header")) + " ~~ Amount of Headers")
 print(str(count_folders("Body")) + " ~~ Amount of Body's")
-print(header_path_number , body_path_number)
+print(header_path_number , "<~ Header num")
+print(body_path_number , "<~ Body num")
 
 header_path = f'./Header/ex{header_path_number}/index.html'
 body_path = f'./Body/ex{body_path_number}/index.html'

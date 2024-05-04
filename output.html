@@ -63,95 +63,81 @@
 </html>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>An About Us Page | CoderGirl</title>
-        <!---Custom Css File!--->
-        <link rel="stylesheet" href="style.css" />
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: "Poppins", sans-serif;
-            }
-            .about-us {
-                height: 100vh;
-                width: 100%;
-                padding: 90px 0;
-                background: #ddd;
-            }
-            .vertical-image {
-                height: auto;
-                width: 302px;
-                filter: blur(10px);
-                -webkit-filter: blur(8px);
-            }
-            .about {
-                width: 1130px;
-                max-width: 85%;
-                margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-            }
-            .text {
-                width: 540px;
-            }
-            .text h2 {
-                font-size: 90px;
-                font-weight: 600;
-                margin-bottom: 10px;
-            }
-            .text h5 {
-                font-size: 22px;
-                font-weight: 500;
-                margin-bottom: 20px;
-            }
-            span {
-                color: #4070f4;
-            }
-            .text p {
-                font-size: 18px;
-                line-height: 25px;
-                letter-spacing: 1px;
-            }
-            .data {
-                margin-top: 30px;
-            }
-            .hire {
-                font-size: 18px;
-                background: #4070f4;
-                color: #fff;
-                text-decoration: none;
-                border: none;
-                padding: 8px 25px;
-                border-radius: 6px;
-                transition: 0.5s;
-            }
-            .hire:hover {
-                background: #000;
-                border: 1px solid #4070f4;
-            }
-        </style>
-    </head>
-    <body>
-        <section class="about-us">
-            <div class="about">
-                <img src="https://pixabay.com/get/g168c8d57966d8d70898a0d8773b1e2038202444a8a175c8ebc33ae822ccb31419c3335983f608cc2814341e91c0956685268df663a3eccf56cfc766ff0806879_640.jpg" class="vertical-image" >
-                <div class="text">
-                    <h2>Beerzy </h2>
-                    <p>
-                        At Beerzy, we pride ourselves on crafting the finest beers with a rich, full-bodied flavor. Our commitment to quality and tradition has made us a beloved staple in the beer industry for over 50 years. Join us in raising a glass to good times and great beer.
-                    </p>
-                    <div class="data">
-                        <a href="#" class="hire">read more</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </body>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>An About Us Page | CoderGirl</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.about-us {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://pixabay.com/get/gd05bee02dcca168540d0e5b8f2d52358e2beb0c40f59dbe1a389f68336ffee5261f30eb2c43ed0105bbaa35eeb9600f4eb9f20d3d6f97857f511d402e987a99a_640.jpg"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex; /* Added for positioning elements */
+  justify-content: center; /* Center elements horizontally */
+  align-items: center; /* Center elements vertically */
+}
+.text-box {
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  text-align: center; /* Center text content inside the box */
+}
+.text-box::before {
+    background: #fff;
+    content: "";
+    opacity: 0.9;
+}
+.text-box h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text-box p {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data {
+  margin-top: 30px;
+}
+.hire-btn {
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.hire-btn:hover {
+  background: #000;
+}
+</style>
+</head>
+<body>
+<section class="about-us">
+    <div class="text-box">
+      <h2>Mizulina</h2>
+      <p>At Mizulina, we pride ourselves on delivering fast and reliable internet connections to our valued customers in Russia. Our team of dedicated professionals is committed to ensuring that your online experience is seamless and enjoyable. Welcome to the Mizulina family! </p>
+      <p>&Description goes here. Briefly describe your company, its mission, and its values.</p>
+      <div class="data">
+        <a href="#" class="hire-btn">Learn More</a>
+      </div>
+    </div>
+</section>
+</body>
 </html>
