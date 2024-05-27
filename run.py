@@ -18,7 +18,7 @@ def replace_text(old_text, new_text):
                 output_file.write(html_content)
             print(f"Replaced placeholders in '{path}'")
         else:
-            print(f"The text '{old_text}' was not found in the file '{path}'")
+            print(f"The text '{old_text}' was not found in the file '{path}' - FATAL ERROR")
 
 os.system("python3 merge.py")  # Merge HTML files to get started"
 
